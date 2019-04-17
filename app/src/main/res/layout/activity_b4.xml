@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.health.B4">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button6" />
+
+        <TextView
+            android:id="@+id/textView26"
+            style="@style/dsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請選擇您的性別" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/c1"
+                style="@style/radioName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="男性" />
+
+            <RadioButton
+                android:id="@+id/c2"
+                style="@style/radioName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="女性" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="0.09">
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/dsName"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:text="腰圍(cm)"
+                android:layout_weight="0.27" />
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/dsName"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:text="體重(kg)"
+                android:layout_weight="0.34" />
+
+            <TextView
+                android:id="@+id/textView24"
+                style="@style/dsName"
+                android:layout_width="74dp"
+                android:layout_height="41dp"
+                android:text="年齡" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/waist2"
+                style="@style/keyName"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/weight2"
+                style="@style/keyName"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/age"
+                style="@style/keyName"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok4"
+            style="@style/buttonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ok4"
+            android:text="開始診斷" />
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/resultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="體脂率" />
+
+        <EditText
+            android:id="@+id/fat"
+            style="@style/ansName"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_weight="0.35"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView23"
+            style="@style/resultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="診斷結果" />
+
+        <EditText
+            android:id="@+id/result4"
+            style="@style/ansName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_weight="0.28" />
+
+        <Button
+            android:id="@+id/home4"
+            style="@style/buttonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="home4"
+            android:text="@string/buttonH" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

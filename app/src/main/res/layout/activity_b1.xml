@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.health.B1">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:text="@string/button3"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/dsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請輸入您的身高(cm)"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <EditText
+            android:id="@+id/h1"
+            style="@style/keyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/dsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請輸入您的體重 (kg)"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <EditText
+            android:id="@+id/w1"
+            style="@style/keyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ok1"
+            style="@style/buttonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ok1"
+            android:text="開始診斷"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/resultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI指數"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/bmi"
+            style="@style/ansName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.48"
+            android:text=""
+            android:textColor="#93033f" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/resultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="診斷結果"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/result1"
+            style="@style/ansName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.43"
+            android:text=""
+            android:textColor="#93033f" />
+
+        <Button
+            android:id="@+id/home1"
+            style="@style/buttonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="home1"
+            android:text="@string/buttonH"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

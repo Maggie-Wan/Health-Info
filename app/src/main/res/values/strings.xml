@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Health</string>
+    <string name="button1">體重管理概述</string>
+    <string name="button2">名詞及公式介紹</string>
+    <string name="button3">BMI計算與診斷</string>
+    <string name="button4">標準體重/合理的體重範圍</string>
+    <string name="button5">腰臀比計算</string>
+    <string name="button6">體脂率計算及診斷</string>
+    <string name="button7">FFMI計算</string>
+    <string name="button8">BMR及TEDD計算</string>
+
+    <string name="buttonD">開始診斷</string>
+    <string name="buttonH">做其他健康診斷</string>
+    <style name="titleName">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#892a04</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="introTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#050dfc</item>
+    </style>
+    <style name="introCon">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="buttonName">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="radioName">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="keyName">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="dsName">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#050dfc</item>
+    </style>
+    <style name="resultName">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#037e30</item>
+    </style>
+    <style name="ansName">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#93033f</item>
+    </style>
+</resources>

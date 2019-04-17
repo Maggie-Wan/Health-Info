@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.health.B2">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:text="@string/button4"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/dsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:text="請選擇您的性別" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a1"
+                style="@style/radioName"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:text="男性" />
+
+            <RadioButton
+                android:id="@+id/a2"
+                style="@style/radioName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="女性" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/dsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="請輸入您的身高(cm)" />
+
+        <EditText
+            android:id="@+id/h2"
+            style="@style/keyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.09"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ok2"
+            style="@style/buttonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:onClick="ok2"
+            android:text="計算我的標準體重" />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/resultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的標準體重" />
+
+        <TextView
+            android:id="@+id/weight"
+            style="@style/keyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:text=""
+            android:textColor="#93033f" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/resultName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的合理體重範圍" />
+
+        <TextView
+            android:id="@+id/result2"
+            style="@style/keyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.37"
+            android:text=""
+            android:textColor="#93033f" />
+
+        <Button
+            android:id="@+id/home2"
+            style="@style/buttonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="home2"
+            android:text="@string/buttonH" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

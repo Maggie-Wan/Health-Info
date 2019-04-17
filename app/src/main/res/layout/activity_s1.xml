@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.health.S1">
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="體重管理概述" />
+
+        <!--因為android:editable="false"已經不能使用了，所以改用focusable和clickable去控制使用者不能編輯這些文字-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            app:srcCompat="@drawable/img01"
+            android:layout_weight="0.78" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:clickable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="7sp"
+            android:text="      所謂「體重」，指的便是「身體所有器官重量的總和」。體重的變化，會直接反映身體長期的熱量平衡狀態。而體重增加的原因，也會因不同的生理特性，顯示體內組織的變化，例如在成長時期，體重會因體內的細胞生長而增加，而在成年時期，體重增加的主要原因是體內的脂肪組織增多及體脂肪增加。\n \n        體重的變化反映身體的熱量平衡狀態，也代表身體組成份的變化。成長時階段各種組織的細胞數目增多，細胞變大，各種成份增多。成年時體重之增加主要是脂肪組織增多。一般而言，每日能量的負平衡在500卡路里時，一週下來可減到0.5公斤的體重。持續穩定的體重下降才不會造成養分和電解質不平衡。當體重下降到目標體重時，飲食控制和運動習慣必須成為生活的一部分，才能持續維持下降的體重。所以希望能輕鬆且迅速減重的人是容易失望的。"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_weight="0.06" />
+
+        <Button
+            android:id="@+id/homeS1"
+            style="@style/buttonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="homeS1"
+            android:text="@string/buttonD"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
